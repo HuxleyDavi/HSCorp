@@ -21,6 +21,7 @@ textarea{
 
 
 body{
+  scroll-behavior: smooth;
   overflow-x: hidden;
   background:white;
 }
