@@ -141,24 +141,27 @@ div.chamada-header input[type=email]{
 }
 
 div.chamada-header input[type=email]:focus{outline: 0;}
+div.chamada-header input[type=email]:hover{border: 2px solid black}
 
 div.chamada-header input[type=submit]{
   width: 181px;
   height: 43px;
   border-radius: 100px;
-  background-color: #ff5f27;
+  background-color: black;
   color: white;
   cursor: pointer;
   border: 0;
-  padding-left: 10px;
+  padding-left: 4px;
 }
 
-section.descricao-danki{
+div.chamada-header input[type=submit]:hover{border: 2px solid white;}
+
+section.descricao-hs{
   text-align: center;
   padding: 30px 0;
 }
 
-section.descricao-danki p{
+section.descricao-hs p{
   display: inline-block;
   max-width: 680px;
   font-weight: lighter;
@@ -167,11 +170,11 @@ section.descricao-danki p{
 }
 
 
-section.descricao-danki2{
+section.descricao-hs2{
   padding: 50px 0;
 }
 
-section.descricao-danki2 > .container{
+section.descricao-hs2 > .container{
   max-width: 960px;
 }
 
@@ -182,7 +185,7 @@ section.descricao-danki2 > .container{
 }
 
 .texto-descricao h3{
-  color: #31475e;
+  color: rgb(41, 41, 41);
   font-size: 22px;
   line-height: 32px;
   font-weight: normal;
@@ -191,21 +194,21 @@ section.descricao-danki2 > .container{
 
 .texto-descricao p{
   margin-top: 15px;
-  color: #6a7c92;
+  color: rgb(47, 47, 47);
   font-size: 15px;
   line-height: 25px;
 }
-section.descricao-danki2 img{
+section.descricao-hs2 img{
   width: 45%;
   float: left;
   max-width: 500px;
 }
 
-section.descricao-danki3{
+section.descricao-hs3{
   padding: 30px 0 60px 0;
 }
 
-section.descricao-danki3 > .container{
+section.descricao-hs3 > .container{
   max-width: 960px;
   background-image: url('../images/bg2.jpg');
   background-size: cover;
@@ -226,7 +229,7 @@ section.descricao-danki3 > .container{
 
 .box-depoimento p{
   font-size: 18px;
-  color: #31475e;
+  color: rgb(47, 47, 47);
   font-weight: lighter;
 }
 
@@ -243,7 +246,7 @@ section.servicos > .container{
 }
 
 .title-servicos h3{
-  color: #31475e;
+  color: rgb(41, 41, 41);
   font-size: 22px;
   font-weight: normal;
 }
@@ -276,7 +279,7 @@ section.servicos > .container{
 }
 
 .box-servico-wraper h2{
-  color: #31475e;
+  color: rgb(41, 41, 41);
   font-size: 20px;
   font-weight: normal;
 }
@@ -285,14 +288,14 @@ section.servicos > .container{
   margin: 8px 0;
   line-height: 1.6;
   font-weight: lighter;
-  color: #6a7c92;
+  color: rgb(47, 47, 47);
   font-size: 15px;
 }
 
 .box-servico-wraper a{
   display: inline-block;
-  border: 1px solid #6a7c92;
-  color: #6a7c92;
+  border: 1px solid rgb(65, 65, 65);
+  color: rgb(65, 65, 65);
   font-size: 14px;
   text-decoration: none;
   padding: 6px 12px;
@@ -345,7 +348,7 @@ section.formulario{
 section.formulario h2{
   text-align: center;
   font-weight: normal;
-  color: #31475e;
+  color: rgb(41, 41, 41);
 }
 
 section.formulario form{
@@ -387,7 +390,7 @@ section.formulario input[type=submit]{
   cursor: pointer;
   border: 0;
   border-radius: 100px;
-  background-color: #ff5f27;
+  background-color: black;
   box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
 }
 
@@ -396,32 +399,36 @@ footer{
 }
 
 .box-footer{
+  text-align: center;
   width: 33.3%;
   float: left;
   padding: 0 15px;
 }
 
 .box-footer h2{
-  color: #31475e;
+  color: rgb(47, 47, 47);
   font-size: 22px;
   font-weight: normal;
 }
 
 .box-footer p{
   margin-top: 10px;
-  color: #31475e;
+  color: rgb(47, 47, 47);
   font-weight: 300;
   font-size: 15px;
 }
 
+.contato i{font-size: 22px; margin-top: 8px; cursor: pointer;}
+
 .box-footer form{margin-top: 10px;}
 
 .box-footer button{
+  cursor: pointer;
   width: calc(20% - 10px);
   margin-left: 10px;
   max-width: 63px;
   height: 43px;
-  border: 1px solid #31475e;
+  border: 1px solid rgb(41, 41, 41);
   border-radius: 50px;
   background: white;
 }
@@ -433,7 +440,7 @@ footer{
   height: 43px;
   border-radius: 100px;
   background-color: #ffffff;
-  border: 1px solid #bfbfbf;
+  border: 1px solid rgb(41, 41, 41);
 }
 
 .box-footer input[type=text]:focus{
@@ -441,7 +448,12 @@ footer{
 }
 
 .box-footer i{
-  color: #31475e;
+  color: rgb(41, 41, 41);
+}
+
+.box-footer a{
+  color: white;
+  padding: 20px;
 }
 
 @media screen and (max-width: 1024px){
@@ -486,7 +498,7 @@ footer{
     width: 100%;
   }
   .texto-descricao{width: 100%;display: block;float: none;}
-  section.descricao-danki2 img{
+  section.descricao-hs2 img{
     width: 100%;
     display: block;
     margin: 0 auto;
